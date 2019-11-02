@@ -1,12 +1,8 @@
 public class test{
   public static void main(String[] args){
-    // 変数nameに、好きな名前を代入してください
-    int number = 10;
-    
-    // while文を用いて、numberが0より大きい場合に繰り返す、繰り返し処理を作ってください
-    while (number > 0){
-      System.out.println(number);
-      number--;
+    // for文を用いて、繰り返し処理をつくってください
+    for(int i = 1;i <= 10; i++){
+      System.out.println(i + "回目のループです");
     }
   }
 }
