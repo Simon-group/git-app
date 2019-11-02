@@ -1,17 +1,19 @@
 public class test{
   public static void main(String[] args){
     // 変数nameに、好きな名前を代入してください
-    int number = 5;
+    int number = 12;
     
-    // numberが20より小さいとき、どちらでもないときの条件分岐を追加してください
-    if (number < 10) {
-      System.out.println("10より小さい");
-    }
-    else if (number < 20) {
-      System.out.println("10以上、20より小さい");
-    }
-    else {
-      System.out.println("20以上");
+    // switch文を用いて、numberを3で割った余りで条件分岐をしてください
+    switch(number % 3){
+      case 0:
+      System.out.println("3で割り切れます");
+      break;
+      case 1:
+      System.out.println("3で割ると1余ります");
+      break;
+      case 2:
+      System.out.println("3で割ると2余ります");
+      break;
     }
   }
 }
