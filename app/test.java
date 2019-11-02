@@ -1,19 +1,22 @@
 public class test{
   public static void main(String[] args){
     // 変数nameに、好きな名前を代入してください
-    System.out.println(true || false);
+    if (true) {
+      System.out.println("条件式がtrueのため、出力されます");
+    }
     
-    // falseと出力されるようにしてください
-    System.out.println(false && true);
+    // 条件式に直接falseをいれてください
+    if (false) {
+      System.out.println("条件式がfalseのため、出力されません");
+    }
     
-    // 「8 < 5」かつ「3 >= 2」の結果を出力してください
-    System.out.println(8 < 5 && 3 >= 2);
-    
-    // 「8 < 5」または「3 >= 2」の結果を出力してください
-    System.out.println(8 < 5 || 3 >= 2);
-    
-    // 「8 < 5」でない、の結果を出力してください
-    System.out.println(!(8 < 5));
-    
+    int x = 5;
+    if (x > 2) {
+      System.out.println("xは2より大きい");
+    }
+    // if文を用いて、変数xが8より大きいとき「xは8より大きい」と出力してください
+    if (x > 8) {
+      System.out.println("xは8より大きい");
+    }
   }
 }
