@@ -1,12 +1,10 @@
 public class test{
   public static void main(String[] args){
-    int month = 12;
-    int date = 31;
+    int number1 = 7;
+    int number2 = 2;
 
-    System.out.println(month + "月" + date + "日");
+    System.out.println(number1 / number2);
 
-    System.out.println(7/2);
-    System.out.println(7.0/2.0);
-    System.out.println(7/2.0);
+    System.out.println((double)number1 / number2);
   }
 }
