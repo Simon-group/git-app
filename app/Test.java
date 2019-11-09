@@ -1,10 +1,25 @@
-public class Test {
-  public static void main(String[] args) {
-      for (int i = 0; i < 10; i++)
-          sayHello();
-  }
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-  private static void sayHello() {
-      System.out.println("こんにちは世界！");
-  }
+public class Test {
+    public static void main(String[] args) {
+        try {
+            // FileWriterクラスのオブジェクトを生成する
+            FileWriter file = new FileWriter("java.txt");
+            // PrintWriterクラスのオブジェクトを生成する
+            PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+            
+            //ファイルに書き込む
+            pw.println("apple");
+            pw.println("orange");
+            pw.println("melon");
+            
+            //ファイルを閉じる
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
