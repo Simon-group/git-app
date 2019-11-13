@@ -1,7 +1,25 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Test {
   public static void main(String[] args) {
-    // printDataメソッドとfullNameメソッドの呼び出しを書き換えてください
-    Test2.printData(Test2.fullName("Kate", "Jones"), 27, 1.6, 50.0);
-    Test2.printData(Test2.fullName("John", "Christopher", "Smith"), 65, 1.75, 80.0);
+    //Listの宣言
+    List<Integer> list = new ArrayList<>();
+    
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    
+    //Mapの宣言
+    Map<Integer, String> map = new HashMap<>();
+    
+    for(Integer num : list) {
+        // MapにListのキーと値を追加
+        map.put(num, "apple");
+    }
+    
+    System.out.println(map); 
   }
 }
