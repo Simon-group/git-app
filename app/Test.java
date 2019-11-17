@@ -1,6 +1,15 @@
+import java.util.Scanner;
+
 public class Test {
   public static void main(String[] args) {
-    Test2.printData(Test2.fullName("Kate", "Jones"), 27, 1.6, 50.0);
-    Test2.printData(Test2.fullName("John", "Christopher", "Smith"), 65, 1.75, 80.0);
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("名前： ");
+    
+    // 変数nameを定義し、コンソールから文字列を受け取って代入してください
+    String name = scanner.next();
+    
+    // 「こんにちは◯◯さん」と出力してください
+    System.out.println("こんにちは" + name + "さん");
   }
 }
