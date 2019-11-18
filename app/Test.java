@@ -1,15 +1,9 @@
-import java.util.Scanner;
-
 public class Test {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    
-    System.out.print("名前： ");
-    
-    // 変数nameを定義し、コンソールから文字列を受け取って代入してください
-    String name = scanner.next();
-    
-    // 「こんにちは◯◯さん」と出力してください
-    System.out.println("こんにちは" + name + "さん");
+    Test2 person1 = new Test2("Kate", "Jones", 27, 1.6, 50.0);
+    person1.printData();
+    Test2 person2 = new Test2("John", "Christopher", "Smith", 65, 1.75, 80.0);
+    person2.printData();
+    Test2.printCount();
   }
 }

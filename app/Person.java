@@ -1,4 +1,5 @@
-public class Test2 {
+public class Person {
+  // 以下をすべてprivateなフィールドに書き換えてください
   public static int count = 0;
   public String firstName;
   public String middleName;
@@ -7,8 +8,8 @@ public class Test2 {
   public double height;
   public double weight;
 
-  Test2(String firstName, String lastName, int age, double height, double weight) {
-    Test2.count++;
+  Person(String firstName, String lastName, int age, double height, double weight) {
+    Person.count++;
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -16,7 +17,7 @@ public class Test2 {
     this.weight = weight;
   }
 
-  Test2(String firstName, String middleName, String lastName, int age, double height, double weight) {
+  Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
     this(firstName, lastName, age, height, weight);
     this.middleName = middleName;
   }
@@ -40,6 +41,6 @@ public class Test2 {
   }
 
   public static void printCount() {
-    System.out.println("合計" + Test2.count + "人です");
+    System.out.println("合計" + Person.count + "人です");
   }
 }
